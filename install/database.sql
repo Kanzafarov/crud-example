@@ -1,0 +1,67 @@
+DROP DATABASE IF EXISTS `{{dbname}}`; 
+
+CREATE DATABASE `{{dbname}}`;
+
+USE `{{dbname}}`;
+
+CREATE TABLE `users` (
+  `id` int(6) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) NOT NULL,
+  `email` varchar(140) NOT NULL,
+  `birthday` date NOT NULL,
+  `location` varchar(100) NOT NULL,
+  `phone` varchar(30) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE = InnoDB CHARSET = utf8;
+
+INSERT INTO `users` (`name`, `email`, `birthday`, `location`, `phone`) VALUES
+('Eva Williams', 'eva.williams46@example.com', '1984-8-30', '4142 Lakeshore Rd, Burkburnett, Arkansas, 75750', '(484)-722-6175'), 
+('Jennifer Miller', 'jennifer.miller36@example.com', '1977-7-9', '4221 Avondale Ave, Joliet, Texas, 20194', '(304)-834-5813'), 
+('Brianna Mitchelle', 'brianna.mitchelle87@example.com', '1972-7-16', '6267 Frances Ct, Nampa, Iowa, 59991', '(695)-848-1749'), 
+('Jeff Armstrong', 'jeff.armstrong12@example.com', '1971-8-12', '6845 Karen Dr, Fayetteville, Michigan, 92525', '(808)-499-6292'), 
+('Leta Black', 'leta.black12@example.com', '1970-12-23', '3494 Cherry St, Dumas, Colorado, 90865', '(583)-279-3776'), 
+('Shelly Hopkins', 'shelly.hopkins22@example.com', '1974-9-19', '8988 Marsh Ln, Seymour, Arizona, 20574', '(407)-686-5758'), 
+('Allison Ryan', 'allison.ryan37@example.com', '1983-7-8', '7481 Railroad St, San Diego, Hawaii, 30354', '(900)-487-6041'), 
+('Jim Clark', 'jim.clark92@example.com', '1979-1-20', '9182 Plum St, Moscow, New Jersey, 84602', '(464)-949-9206'), 
+('Jordan Roberts', 'jordan.roberts85@example.com', '1976-9-16', '3188 Groveland Terrace, Cincinnati, Louisiana, 97207', '(571)-838-8238'), 
+('Adrian Thomas', 'adrian.thomas77@example.com', '1985-7-10', '9286 Dane St, Albuquerque, Arizona, 17999', '(786)-810-8778'), 
+('Tyler Ortiz', 'tyler.ortiz59@example.com', '1982-9-22', '7096 Hickory Creek Dr, Detroit, Missouri, 59951', '(145)-494-8999'), 
+('Diane Mason', 'diane.mason50@example.com', '1976-4-21', '1030 Blossom Hill Rd, Plano, Hawaii, 88910', '(739)-495-8018'), 
+('Stella Andrews', 'stella.andrews22@example.com', '1985-12-28', '2743 Mcgowen St, Cedar Hill, Connecticut, 44966', '(435)-729-4767'), 
+('Anthony Wright', 'anthony.wright85@example.com', '1970-2-1', '4395 E Little York Rd, Saginaw, North Carolina, 60231', '(111)-966-8751'), 
+('Alexis Barnett', 'alexis.barnett29@example.com', '1985-6-30', '6940 Robinson Rd, Helena, California, 74007', '(654)-287-9615'), 
+('Leslie Wade', 'leslie.wade27@example.com', '1975-7-26', '8741 Paddock Way, Seymour, Kansas, 49442', '(354)-515-3939'), 
+('Allen Dunn', 'allen.dunn69@example.com', '1985-2-1', '8091 Karen Dr, Desoto, Nebraska, 94230', '(549)-535-4491'), 
+('Grace Sullivan', 'grace.sullivan34@example.com', '1975-8-18', '7512 Fairview St, Vernon, Maryland, 41179', '(759)-638-9642'), 
+('Greg Washington', 'greg.washington52@example.com', '1976-9-2', '5886 Smokey Ln, Rochester, Pennsylvania, 29200', '(291)-183-5066'), 
+('Jill Stanley', 'jill.stanley72@example.com', '1985-12-16', '2336 Adams St, Shelby, Colorado, 18277', '(517)-909-7114'), 
+('Corey Lynch', 'corey.lynch11@example.com', '1973-11-26', '2410 First Street, Raleigh, Louisiana, 60584', '(442)-747-4826'), 
+('Reginald Barrett', 'reginald.barrett96@example.com', '1981-4-3', '5634 Shady Ln Dr, Red Bluff, Massachusetts, 23847', '(659)-707-3587'), 
+('Paul Gray', 'paul.gray99@example.com', '1978-4-10', '1936 W Dallas St, Pittsburgh, Arizona, 28799', '(415)-292-7395'), 
+('Marian Pierce', 'marian.pierce11@example.com', '1978-6-30', '8031 Photinia Ave, Tacoma, Maryland, 21969', '(395)-402-2998'), 
+('Erica Jensen', 'erica.jensen96@example.com', '1977-5-10', '7089 Brown Terrace, Colorado Springs, Oklahoma, 30492', '(306)-888-6664'), 
+('Connor Bates', 'connor.bates60@example.com', '1984-11-11', '8671 Mcclellan Rd, Portland, Montana, 18916', '(597)-800-2326'), 
+('Ben Kennedy', 'ben.kennedy19@example.com', '1979-9-28', '2955 Hillcrest Rd, Rio Rancho, Maryland, 48937', '(311)-376-2350'), 
+('Serenity Romero', 'serenity.romero16@example.com', '1985-4-7', '9388 Smokey Ln, Fremont, Alabama, 33815', '(446)-519-8991'), 
+('Perry Garcia', 'perry.garcia70@example.com', '1985-12-5', '7140 Harrison Ct, Denver, Rhode Island, 17292', '(881)-616-1277'), 
+('Cherly Clark', 'cherly.clark47@example.com', '1971-6-3', '5070 Parker Rd, Tacoma, Nevada, 78312', '(468)-811-4158'), 
+('Lucy Gray', 'lucy.gray89@example.com', '1977-11-22', '2281 Frances Ct, Evansville, Alaska, 38492', '(522)-880-9037'), 
+('Alexis White', 'alexis.white24@example.com', '1979-7-28', '4373 Green Rd, Albuquerque, Arizona, 47155', '(264)-282-3124'), 
+('Ellen Newman', 'ellen.newman94@example.com', '1983-4-9', '2005 W Pecan St, Fountain Valley, Connecticut, 95318', '(622)-156-9403'), 
+('Calvin Wagner', 'calvin.wagner83@example.com', '1981-4-17', '3408 Dane St, Flowermound, Vermont, 25871', '(162)-177-5121'), 
+('Terry Alexander', 'terry.alexander70@example.com', '1978-7-3', '6587 Harrison Ct, Lewiston, Wisconsin, 77017', '(684)-684-1337'), 
+('Vincent Foster', 'vincent.foster32@example.com', '1979-8-17', '6310 Miller Ave, Lowell, Maine, 57051', '(155)-515-2263'), 
+('Jamie Gardner', 'jamie.gardner21@example.com', '1975-6-20', '8744 Dane St, Columbus, Georgia, 69113', '(122)-983-8340'), 
+('Eileen Cook', 'eileen.cook13@example.com', '1984-1-21', '6303 W Belt Line Rd, Everett, Minnesota, 13819', '(396)-619-6139'), 
+('Michael Castro', 'michael.castro65@example.com', '1970-11-10', '5968 Groveland Terrace, Yakima, Nevada, 56255', '(913)-883-2538'), 
+('Herman Jacobs', 'herman.jacobs56@example.com', '1976-11-22', '8721 Marsh Ln, Frisco, Georgia, 51115', '(755)-433-2363'), 
+('Gordon Cooper', 'gordon.cooper61@example.com', '1973-2-12', '2498 Prospect Rd, Red Bluff, Kansas, 92915', '(138)-117-9281'), 
+('Carla Arnold', 'carla.arnold58@example.com', '1978-7-2', '8029 Edwards Rd, Grants Pass, Florida, 44964', '(681)-745-8421'), 
+('Tommy Harrison', 'tommy.harrison53@example.com', '1984-12-13', '7083 Bollinger Rd, Eugene, New Hampshire, 51653', '(361)-883-7166'), 
+('Leslie Watts', 'leslie.watts92@example.com', '1974-7-10', '9787 Robinson Rd, Wichita Falls, Delaware, 73271', '(647)-407-6508'), 
+('Donald Terry', 'donald.terry25@example.com', '1984-8-11', '7409 Mockingbird Ln, Boulder, Indiana, 37819', '(863)-371-3839'), 
+('Tonya Holt', 'tonya.holt75@example.com', '1972-8-28', '4247 Green Rd, Van Alstyne, Nebraska, 12639', '(310)-297-1456'), 
+('Courtney Adams', 'courtney.adams36@example.com', '1972-5-16', '6318 Oak Lawn Ave, Nampa, Missouri, 27319', '(601)-309-4771'), 
+('Fred Gomez', 'fred.gomez13@example.com', '1972-3-22', '6926 E Center St, Caldwell, Alabama, 52361', '(777)-818-1421'), 
+('Ken Watson', 'ken.watson79@example.com', '1978-12-14', '6429 Camden Ave, Columbus, Massachusetts, 96314', '(146)-993-2603'), 
+('Dylan Sutton', 'dylan.sutton43@example.com', '1980-2-21', '6364 Mcclellan Rd, Long Beach, Kansas, 41366', '(218)-741-6477');
